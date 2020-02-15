@@ -1,0 +1,236 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '--save',
+1 verbose cli   'jsonwebtoken',
+1 verbose cli   'passport',
+1 verbose cli   'passport--local',
+1 verbose cli   'lodash' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData jsonwebtoken@^8.5.1
+8 silly fetchPackageMetaData passport
+9 silly fetchPackageMetaData passport--local
+10 silly fetchPackageMetaData lodash
+11 silly fetchNamedPackageData jsonwebtoken
+12 silly mapToRegistry name jsonwebtoken
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/jsonwebtoken
+16 silly fetchNamedPackageData passport
+17 silly mapToRegistry name passport
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/passport
+21 silly fetchNamedPackageData passport--local
+22 silly mapToRegistry name passport--local
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/passport--local
+26 silly fetchNamedPackageData lodash
+27 silly mapToRegistry name lodash
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/lodash
+31 verbose request uri https://registry.npmjs.org/passport
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 12:32:25 PM
+34 verbose request id 1b536ab8fc0cbc3c
+35 http request GET https://registry.npmjs.org/passport
+36 verbose request uri https://registry.npmjs.org/passport--local
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 12:32:25 PM
+39 http request GET https://registry.npmjs.org/passport--local
+40 verbose request uri https://registry.npmjs.org/jsonwebtoken
+41 verbose request no auth needed
+42 info attempt registry request try #1 at 12:32:25 PM
+43 verbose etag W/"01c5940f8157b53f3af88d2821c09ccd"
+44 verbose lastModified Sat, 21 Sep 2019 18:44:15 GMT
+45 http request GET https://registry.npmjs.org/jsonwebtoken
+46 verbose request uri https://registry.npmjs.org/lodash
+47 verbose request no auth needed
+48 info attempt registry request try #1 at 12:32:25 PM
+49 verbose etag W/"59a095f378916828548a9e96b39933cc"
+50 verbose lastModified Sat, 04 Jan 2020 09:20:25 GMT
+51 http request GET https://registry.npmjs.org/lodash
+52 http 304 https://registry.npmjs.org/jsonwebtoken
+53 verbose headers { date: 'Thu, 06 Feb 2020 20:32:25 GMT',
+53 verbose headers   connection: 'keep-alive',
+53 verbose headers   'set-cookie':
+53 verbose headers    [ '__cfduid=da0672624fcc0580a0b1bae225cb8b9e51581021145; expires=Sat, 07-Mar-20 20:32:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+53 verbose headers   'cf-ray': '560fe4b01ce86d4c-SJC',
+53 verbose headers   age: '305',
+53 verbose headers   'cache-control': 'public, max-age=300',
+53 verbose headers   etag: '"01c5940f8157b53f3af88d2821c09ccd"',
+53 verbose headers   'last-modified': 'Sat, 21 Sep 2019 18:44:15 GMT',
+53 verbose headers   vary: 'Accept-Encoding',
+53 verbose headers   'cf-cache-status': 'HIT',
+53 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+53 verbose headers   server: 'cloudflare' }
+54 silly get cb [ 304,
+54 silly get   { date: 'Thu, 06 Feb 2020 20:32:25 GMT',
+54 silly get     connection: 'keep-alive',
+54 silly get     'set-cookie':
+54 silly get      [ '__cfduid=da0672624fcc0580a0b1bae225cb8b9e51581021145; expires=Sat, 07-Mar-20 20:32:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+54 silly get     'cf-ray': '560fe4b01ce86d4c-SJC',
+54 silly get     age: '305',
+54 silly get     'cache-control': 'public, max-age=300',
+54 silly get     etag: '"01c5940f8157b53f3af88d2821c09ccd"',
+54 silly get     'last-modified': 'Sat, 21 Sep 2019 18:44:15 GMT',
+54 silly get     vary: 'Accept-Encoding',
+54 silly get     'cf-cache-status': 'HIT',
+54 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+54 silly get     server: 'cloudflare' } ]
+55 verbose etag https://registry.npmjs.org/jsonwebtoken from cache
+56 verbose get saving jsonwebtoken to /home/thehappyirishamerican/.npm/registry.npmjs.org/jsonwebtoken/.cache.json
+57 http 200 https://registry.npmjs.org/passport
+58 verbose headers { date: 'Thu, 06 Feb 2020 20:32:25 GMT',
+58 verbose headers   'content-type': 'application/json',
+58 verbose headers   'transfer-encoding': 'chunked',
+58 verbose headers   connection: 'keep-alive',
+58 verbose headers   'set-cookie':
+58 verbose headers    [ '__cfduid=d3ce233ce0d477b1a966635e7d7d1d7cb1581021145; expires=Sat, 07-Mar-20 20:32:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+58 verbose headers   'cf-ray': '560fe4b01aaf92f8-SJC',
+58 verbose headers   age: '4371',
+58 verbose headers   'cache-control': 'public, max-age=300',
+58 verbose headers   etag: 'W/"d6301ad9a5361d64f91a74f066a8ede0"',
+58 verbose headers   'last-modified': 'Mon, 09 Dec 2019 15:49:12 GMT',
+58 verbose headers   vary: 'accept-encoding, accept',
+58 verbose headers   'cf-cache-status': 'HIT',
+58 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+58 verbose headers   server: 'cloudflare',
+58 verbose headers   'content-encoding': 'gzip' }
+59 silly get cb [ 200,
+59 silly get   { date: 'Thu, 06 Feb 2020 20:32:25 GMT',
+59 silly get     'content-type': 'application/json',
+59 silly get     'transfer-encoding': 'chunked',
+59 silly get     connection: 'keep-alive',
+59 silly get     'set-cookie':
+59 silly get      [ '__cfduid=d3ce233ce0d477b1a966635e7d7d1d7cb1581021145; expires=Sat, 07-Mar-20 20:32:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+59 silly get     'cf-ray': '560fe4b01aaf92f8-SJC',
+59 silly get     age: '4371',
+59 silly get     'cache-control': 'public, max-age=300',
+59 silly get     etag: 'W/"d6301ad9a5361d64f91a74f066a8ede0"',
+59 silly get     'last-modified': 'Mon, 09 Dec 2019 15:49:12 GMT',
+59 silly get     vary: 'accept-encoding, accept',
+59 silly get     'cf-cache-status': 'HIT',
+59 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+59 silly get     server: 'cloudflare',
+59 silly get     'content-encoding': 'gzip' } ]
+60 verbose get saving passport to /home/thehappyirishamerican/.npm/registry.npmjs.org/passport/.cache.json
+61 http 200 https://registry.npmjs.org/lodash
+62 verbose headers { date: 'Thu, 06 Feb 2020 20:32:25 GMT',
+62 verbose headers   'content-type': 'application/json',
+62 verbose headers   'transfer-encoding': 'chunked',
+62 verbose headers   connection: 'keep-alive',
+62 verbose headers   'set-cookie':
+62 verbose headers    [ '__cfduid=d348c3e8dc3a81e55616bc656a5e23aa31581021145; expires=Sat, 07-Mar-20 20:32:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+62 verbose headers   'cf-ray': '560fe4b02b626e06-SJC',
+62 verbose headers   age: '1723',
+62 verbose headers   'cache-control': 'public, max-age=300',
+62 verbose headers   etag: 'W/"accce7e8a56ad850b3b05d307d3c7884"',
+62 verbose headers   'last-modified': 'Thu, 06 Feb 2020 15:52:57 GMT',
+62 verbose headers   vary: 'accept-encoding, accept',
+62 verbose headers   'cf-cache-status': 'HIT',
+62 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+62 verbose headers   server: 'cloudflare',
+62 verbose headers   'content-encoding': 'gzip' }
+63 silly get cb [ 200,
+63 silly get   { date: 'Thu, 06 Feb 2020 20:32:25 GMT',
+63 silly get     'content-type': 'application/json',
+63 silly get     'transfer-encoding': 'chunked',
+63 silly get     connection: 'keep-alive',
+63 silly get     'set-cookie':
+63 silly get      [ '__cfduid=d348c3e8dc3a81e55616bc656a5e23aa31581021145; expires=Sat, 07-Mar-20 20:32:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+63 silly get     'cf-ray': '560fe4b02b626e06-SJC',
+63 silly get     age: '1723',
+63 silly get     'cache-control': 'public, max-age=300',
+63 silly get     etag: 'W/"accce7e8a56ad850b3b05d307d3c7884"',
+63 silly get     'last-modified': 'Thu, 06 Feb 2020 15:52:57 GMT',
+63 silly get     vary: 'accept-encoding, accept',
+63 silly get     'cf-cache-status': 'HIT',
+63 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+63 silly get     server: 'cloudflare',
+63 silly get     'content-encoding': 'gzip' } ]
+64 verbose get saving lodash to /home/thehappyirishamerican/.npm/registry.npmjs.org/lodash/.cache.json
+65 http 404 https://registry.npmjs.org/passport--local
+66 verbose headers { date: 'Thu, 06 Feb 2020 20:32:25 GMT',
+66 verbose headers   'content-type': 'application/json',
+66 verbose headers   'content-length': '21',
+66 verbose headers   connection: 'keep-alive',
+66 verbose headers   'set-cookie':
+66 verbose headers    [ '__cfduid=dddf1d36ebb8320d7caa4c9dd142e09b11581021145; expires=Sat, 07-Mar-20 20:32:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+66 verbose headers   'cf-ray': '560fe4b01d9eed6b-SJC',
+66 verbose headers   vary: 'Accept-Encoding',
+66 verbose headers   'cf-cache-status': 'MISS',
+66 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+66 verbose headers   server: 'cloudflare' }
+67 silly get cb [ 404,
+67 silly get   { date: 'Thu, 06 Feb 2020 20:32:25 GMT',
+67 silly get     'content-type': 'application/json',
+67 silly get     'content-length': '21',
+67 silly get     connection: 'keep-alive',
+67 silly get     'set-cookie':
+67 silly get      [ '__cfduid=dddf1d36ebb8320d7caa4c9dd142e09b11581021145; expires=Sat, 07-Mar-20 20:32:25 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+67 silly get     'cf-ray': '560fe4b01d9eed6b-SJC',
+67 silly get     vary: 'Accept-Encoding',
+67 silly get     'cf-cache-status': 'MISS',
+67 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+67 silly get     server: 'cloudflare' } ]
+68 silly fetchPackageMetaData Error: Not found : passport--local
+68 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+68 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+68 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+68 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+68 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+68 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+68 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+68 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+68 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+68 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+68 silly fetchPackageMetaData  error for passport--local { Error: Not found : passport--local
+68 silly fetchPackageMetaData     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+68 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+68 silly fetchPackageMetaData     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+68 silly fetchPackageMetaData     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+68 silly fetchPackageMetaData     at emitTwo (events.js:126:13)
+68 silly fetchPackageMetaData     at Request.emit (events.js:214:7)
+68 silly fetchPackageMetaData     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+68 silly fetchPackageMetaData     at emitOne (events.js:121:20)
+68 silly fetchPackageMetaData     at Request.emit (events.js:211:7)
+68 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12) pkgid: 'passport--local', statusCode: 404, code: 'E404' }
+69 silly rollbackFailedOptional Starting
+70 silly rollbackFailedOptional Finishing
+71 silly runTopLevelLifecycles Starting
+72 silly runTopLevelLifecycles Finishing
+73 silly install printInstalled
+74 verbose stack Error: Not found : passport--local
+74 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+74 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+74 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+74 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+74 verbose stack     at emitTwo (events.js:126:13)
+74 verbose stack     at Request.emit (events.js:214:7)
+74 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+74 verbose stack     at emitOne (events.js:121:20)
+74 verbose stack     at Request.emit (events.js:211:7)
+74 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+75 verbose statusCode 404
+76 verbose pkgid passport--local
+77 verbose cwd /home/thehappyirishamerican/conor-first-js-application/NodeJS
+78 error Linux 5.3.0-28-generic
+79 error argv "/usr/bin/node" "/usr/bin/npm" "i" "--save" "jsonwebtoken" "passport" "passport--local" "lodash"
+80 error node v8.10.0
+81 error npm  v3.5.2
+82 error code E404
+83 error 404 Not found : passport--local
+84 error 404
+85 error 404 'passport--local' is not in the npm registry.
+86 error 404 You should bug the author to publish it (or use the name yourself!)
+87 error 404 Note that you can also install from a
+88 error 404 tarball, folder, http url, or git url.
+89 verbose exit [ 1, true ]
