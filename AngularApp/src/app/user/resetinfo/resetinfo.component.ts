@@ -7,8 +7,8 @@ import { Router, ActivatedRoute } from '@angular/router';
   selector: 'app-resetinfo',
   templateUrl: './resetinfo.component.html',
   styleUrls: ['./resetinfo.component.css']
-
 })
+
 export class ResetinfoComponent implements OnInit {
   [x: string]: any; 
   ResponseResetForm: FormGroup;

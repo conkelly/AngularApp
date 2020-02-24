@@ -7,6 +7,7 @@ export class Employee {
     phone: string;
     website: string;
     description: string;
+    user: string;
 }
 
 

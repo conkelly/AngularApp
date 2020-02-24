@@ -22,18 +22,22 @@ phoneRegex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
 websiteRegex = /^[a-zA-Z0-9\-\.]+\.(com|org|net|mil|edu|COM|ORG|NET|MIL|EDU)$/;
 zipRegex = /^\d{5}$/;
 
-  constructor(public employeeService: EmployeeService, public userService: UserService, public router: Router) { }
+  constructor(public employeeService: EmployeeService, public userService: UserService,  public router: Router) {
+    console.log(localStorage.getItem('ID'));
+    //this.employeeService.selectedEmployee.user = localStorage.getItem('ID'); 
+
+   }
 
   onLogout(){
     this.userService.deleteToken();
     this.router.navigate(['/login']);
+    localStorage.setItem('ID','');
   }
-
-  
 
   ngOnInit() {
     this.resetForm();
     this.refreshEmployeeList();
+   // console.log(localStorage.getItem('ID'));
   }
 
   resetForm(form?: NgForm) {
@@ -45,7 +49,8 @@ zipRegex = /^\d{5}$/;
       email: "",
       phone: "",
       website: "",
-      description: ""
+      description: "",
+      user: "", //localStorage.getItem('ID'),
     }
     if (form)
       form.reset();
@@ -54,6 +59,8 @@ zipRegex = /^\d{5}$/;
 
   onSubmit(form: NgForm) {
     if (form.value._id == "" || form.value._id === null) {
+      form.value.user = localStorage.getItem('ID');
+      
       this.employeeService.postEmployee(form.value).subscribe(res => {
         this.resetForm(form);
         this.refreshEmployeeList();
@@ -69,16 +76,13 @@ zipRegex = /^\d{5}$/;
       this.employeeService.putEmployee(form.value).subscribe((res) => {
         this.resetForm(form);
         this.refreshEmployeeList();
-        M.toast({ html: 'Updated successfully', classes: 'rounded' });
-      });
-    }
-  }
+        M.toast({ html: 'Updated successfully', classes: 'rounded' });});}}
 
   refreshEmployeeList() {
-    this.employeeService.getEmployeeList().subscribe((res) => {
+    this.employeeService.getEmployeeList(localStorage.getItem('ID')).subscribe((res) => {
       this.employeeService.employees = res as Employee[];
-    });
-  }
+      //console.log(res.find(user => user, user === localStorage.getItem('ID')))
+    });}
 
   onEdit(emp: Employee) {
     this.employeeService.selectedEmployee = emp;
@@ -89,9 +93,4 @@ zipRegex = /^\d{5}$/;
       this.employeeService.deleteEmployee(_id).subscribe((res) => {
         this.refreshEmployeeList();
         this.resetForm(form);
-        M.toast({ html: 'Deleted successfully', classes: 'rounded' });
-      });
-    }
-  }
-
-}
+        M.toast({ html: 'Deleted successfully', classes: 'rounded' });});}}}

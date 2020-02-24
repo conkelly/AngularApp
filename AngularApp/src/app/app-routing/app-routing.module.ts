@@ -4,7 +4,7 @@
     import { SignUpComponent} from '../user/sign-up/sign-up.component';
     import { EmployeeComponent } from '../employee/employee.component';
     import { SignInComponent } from '../user/sign-in/sign-in.component';
-    import{ AuthGuard } from '../../../auth/auth.guard';
+    import{ AuthGuard } from '../../../helpers/auth.guard';
     import{ EditinfoComponent } from '../user/editinfo/editinfo.component';
     import{ ResetinfoComponent} from '../user/resetinfo/resetinfo.component'; 
 
@@ -34,7 +34,7 @@
             component: ResetinfoComponent
         },
         {
-            path: '',redirectTo: '/login', pathMatch: 'full'
+            path: '',redirectTo: 'login', pathMatch: 'full'
         },
         { 
           path: 'companies', 

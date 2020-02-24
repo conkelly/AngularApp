@@ -4,8 +4,10 @@ var ObjectId = require('mongoose').Types.ObjectId;
 
 var { Employee } = require('../models/employee');
 
+
 // => localhost:3000/employees/
 router.get('/', (req, res) => {
+    console.log(req.params);
     Employee.find((err, docs) => {
         if (!err) { res.send(docs); }
         else { console.log('Error in Retriving Employees :' + JSON.stringify(err, undefined, 2)); }
@@ -15,7 +17,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     if (!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id : ${req.params.id}`);
-
+    console.log(req.params);
     Employee.findById(req.params.id, (err, doc) => {
         if (!err) { res.send(doc); }
         else { console.log('Error in Retriving Employee :' + JSON.stringify(err, undefined, 2)); }
@@ -31,6 +33,7 @@ router.post('/', (req, res) => {
         phone: req.body.phone,
         website: req.body.website,
         description: req.body.description,
+        user: req.body.user,
     });
     emp.save((err, doc) => {
         if (!err) { res.send(doc); }
@@ -50,6 +53,7 @@ router.put('/:id', (req, res) => {
         phone: req.body.phone,
         website: req.body.website,
         description: req.body.description,
+        user: req.body.user,
     };
     Employee.findByIdAndUpdate(req.params.id, { $set: emp }, { new: true }, (err, doc) => {
         if (!err) { res.send(doc); }

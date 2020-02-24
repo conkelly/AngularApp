@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import { User } from './user.model';
-import{ HttpClient, HttpHeaders } from '@angular/common/http';
+import{ HttpClient, HttpHeaders, HttpHandler, HttpEvent, HttpInterceptor } from '@angular/common/http';
 import{ environment } from '../../environments/environment'; //localhost:3000/api
 import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root'})
 
 export class UserService { selectedUser: User = { 
-    fullName: '', email: '', password: ''};
+    fullName: '', email: '', password: '', user_type: ''};
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { } 
 
   postUser(user: User): Observable<any> { 
     return this.http.post(environment.apiBaseUrl+'/register',user);

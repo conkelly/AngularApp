@@ -29,6 +29,7 @@ var SquiggleBop = new mongoose.Schema({
         type: String,
         required: 'Description can\'t be empty',
     }, 
+    user: {type: String, }
 }); 
 
 SquiggleBop.path('email').validate((val) => { 

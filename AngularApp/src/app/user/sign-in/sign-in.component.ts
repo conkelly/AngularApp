@@ -25,10 +25,11 @@ export class SignInComponent implements OnInit {
     this.userService.login(form.value).subscribe(
       res => {
         this.userService.setToken(res['token']);
+        localStorage.setItem('ID',res.user._id); //save id in local storage.
         this.router.navigateByUrl('/companies');
       },
       err => { 
-          this.serverErrorMessages = err.error.message;
+        this.serverErrorMessages = err.error.message;
       }
     );
   }

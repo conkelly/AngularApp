@@ -17,7 +17,10 @@ var userSchema = new mongoose.Schema({
         required: 'Password can\'t be empty',
         minlength: [4, 'Password must be at least 4 characters long.']
     }, 
-    saltSecret: String
+    saltSecret: String,
+    user_type: { 
+        type: String
+    }
 }); 
 
 userSchema.path('email').validate((val) => { 

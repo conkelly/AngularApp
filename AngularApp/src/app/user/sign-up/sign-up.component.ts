@@ -31,14 +31,16 @@ export class SignUpComponent implements OnInit {
         } else 
         this.serverErrorMessages = "Something went wrong. Please contact admin.";
       });
-  }
+  
+    }
 
 
   resetForm(form:NgForm){ 
     this.userService.selectedUser = { 
       fullName: '',
       email: '', 
-      password: ''
+      password: '',
+      user_type: ''
     };
     form.resetForm(); 
     this.serverErrorMessages = '';
